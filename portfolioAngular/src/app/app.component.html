@@ -2,9 +2,24 @@
   <div class="header-wrap">
     <div class="header-warp-inner">
       <div class="left-part">
+        <mat-drawer-container class="hamburguer-menu" autosize *ngIf="screenSize">
+          <mat-drawer #drawer class="sidenav-menu" mode="side">
+            <p>Auto-resizing sidenav</p>
+            <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+            <button (click)="showFiller = !showFiller" mat-raised-button>
+              Toggle extra text
+            </button>
+          </mat-drawer>
+        
+          <div class="example-sidenav-content">
+            <button type="button" mat-button (click)="drawer.toggle()">
+              <mat-icon>menu</mat-icon>
+            </button>
+          </div>       
+        </mat-drawer-container>
         <h2>Fontao Alejo</h2>
       </div>
-      <div class="right-part">
+      <div class="right-part" *ngIf="!screenSize">
         <nav class="nav-menu">
           <ul class="nav-menu-options">
             <li>
@@ -32,18 +47,22 @@
                 <section class="underline">//Opcion 3</section>
               </a>
             </li>
-          </ul>
+          </ul>         
         </nav>
       </div>
     </div>
   </div>
+  
 </header>
 
 <section id="presentation">
-  <h1>Alejo Fontao</h1>
+  <h1>&lt;h1&gt; Alejo Fontao &lt;/h1&gt;</h1>
   <h5>Estudiante, Ing. En Sistemas</h5>
 </section>
 
 <section id="aptitudes">
-  
+  <h1 class="heading-title">Mis Aptitudes</h1>
+  <div class="container-aptitudes">
+    <app-aptitude-card *ngFor="let aptitud of aptitudes" [aptitud]="aptitud"></app-aptitude-card>
+  </div>
 </section>

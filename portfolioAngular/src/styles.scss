@@ -4,12 +4,15 @@
 html,
 body {
     height: 100%;
+    width: 100%;
 }
 
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: var(--color1)
+    background-color: var(--color1);
+    color: var(--color4);
+    width: 100%;
 }
 
 
@@ -18,11 +21,23 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+/*
 :root {
     --color1: #000000;
     --color2: #14213d;
     --color3: #fca311;
     --color4: #e5e5e5;
     --color5: #ffffff;
+}
+*/
+:root{
+    --color1: #202c39;
+    --color2: #283845;
+    --color3: #b8b08d;
+    --color4: #f2d492;
+    --color5: #f29559;
+}
+
+.heading-title{
+    font-size: 75px;
 }
