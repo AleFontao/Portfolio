@@ -8,11 +8,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { AptitudeCardComponent } from './aptitude-card/aptitude-card.component';
+import { CertificationCardComponent } from './certification-card/certification-card.component';
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
-    AptitudeCardComponent
-  ],
+    AptitudeCardComponent,
+      CertificationCardComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,

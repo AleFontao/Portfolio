@@ -5,21 +5,7 @@ import { Aptitud } from 'src/models/aptitud';
 @Component({
   selector: 'app-aptitude-card',
   templateUrl: './aptitude-card.component.html',
-  styleUrls: ['./aptitude-card.component.scss'],
-  animations: [
-    trigger('enterState', [
-      state('void', style({
-        opacity: 0,
-
-      })),
-      transition(':enter', [
-        animate(8000, style({
-          opacity: 1,
-
-        }))
-      ])
-    ])
-  ]
+  styleUrls: ['./aptitude-card.component.scss']
 })
 export class AptitudeCardComponent implements OnInit {
   @Input()

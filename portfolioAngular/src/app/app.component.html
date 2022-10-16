@@ -10,12 +10,12 @@
               Toggle extra text
             </button>
           </mat-drawer>
-        
+
           <div class="example-sidenav-content">
             <button type="button" mat-button (click)="drawer.toggle()">
               <mat-icon>menu</mat-icon>
             </button>
-          </div>       
+          </div>
         </mat-drawer-container>
         <h2>Fontao Alejo</h2>
       </div>
@@ -47,12 +47,12 @@
                 <section class="underline">//Opcion 3</section>
               </a>
             </li>
-          </ul>         
+          </ul>
         </nav>
       </div>
     </div>
   </div>
-  
+
 </header>
 
 <section id="presentation">
@@ -64,5 +64,13 @@
   <h1 class="heading-title">Mis Aptitudes</h1>
   <div class="container-aptitudes">
     <app-aptitude-card *ngFor="let aptitud of aptitudes" [aptitud]="aptitud"></app-aptitude-card>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="container-certifications">
+    <app-certification-card></app-certification-card>
+    <app-certification-card></app-certification-card>
+    <app-certification-card></app-certification-card>
   </div>
 </section>
