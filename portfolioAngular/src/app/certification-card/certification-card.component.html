@@ -1,5 +1,14 @@
 <div class="card-wrapper">
   <div class="card-certification">
-    <h1>sd</h1>
+    <mat-icon>book</mat-icon>
+    <h1>{{certificate.titleCertification}}</h1>
+    <!--<div class="card-description">
+      <h5 class="description"><a href="{{certificate.linkCertification}}">{{certificate.linkCertification}}</a></h5>
+    </div>-->
+    <div class="card-description">
+      <a href="{{certificate.linkCertification}}" target="_blank" rel="noreferrer noopener">
+        <button mat-stroked-button>Ver certificado</button>
+      </a>
+    </div>
   </div>
 </div>

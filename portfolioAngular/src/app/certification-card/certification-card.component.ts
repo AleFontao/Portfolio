@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Certificate } from 'src/models/certificate';
 
 @Component({
   selector: 'app-certification-card',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./certification-card.component.scss']
 })
 export class CertificationCardComponent implements OnInit {
+  @Input() 
+  certificate:Certificate|any;
 
   constructor() { }
-
+ 
   ngOnInit() {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -20,6 +23,8 @@ export class CertificationCardComponent implements OnInit {
     document.querySelectorAll('.card-certification').forEach(element => {
       observer.observe(element);
     })
+
+    console.log(this.certificate)
   }
 
 }

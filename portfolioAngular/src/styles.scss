@@ -21,6 +21,7 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 /*
 :root {
     --color1: #000000;
@@ -30,7 +31,7 @@ body {
     --color5: #ffffff;
 }
 */
-:root{
+:root {
     --color1: #202c39;
     --color2: #283845;
     --color3: #b8b08d;
@@ -38,6 +39,14 @@ body {
     --color5: #f29559;
 }
 
-.heading-title{
+.heading-title {
     font-size: 75px;
+}
+
+a {
+    color: inherit;
+}
+
+.mat-stroked-button {
+    border: 2px solid var(--color1) !important;
 }

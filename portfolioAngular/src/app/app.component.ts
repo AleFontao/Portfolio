@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Aptitud, Aptitudes } from 'src/models/aptitud';
+import { Certificate, Certificates } from 'src/models/certificate';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +12,10 @@ export class AppComponent implements OnInit {
   showFiller = false;
   screenSize = false;
   aptitudes: Aptitud[] = Aptitudes;
+  certifications: Certificate[] = Certificates;
   ngOnInit() {
     this.onResize();
-    console.log(this.aptitudes)
+    
     
   }
 
