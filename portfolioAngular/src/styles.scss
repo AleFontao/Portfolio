@@ -3,14 +3,18 @@
 
 html,
 body {
-    height: 100%;
     width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+
 }
 
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: var(--color1);
+    background-color: #ffff;
     color: var(--color4);
     width: 100%;
 }
@@ -31,12 +35,21 @@ body {
     --color5: #ffffff;
 }
 */
+/*
 :root {
     --color1: #202c39;
     --color2: #283845;
     --color3: #b8b08d;
     --color4: #f2d492;
     --color5: #f29559;
+}
+*/
+:root {
+    --color1: #084C61;
+    --color2: #DEE5E5;
+    --color3: #897C80;
+    --color4: #381D2A;
+    --color5: #230C33;
 }
 
 .heading-title {

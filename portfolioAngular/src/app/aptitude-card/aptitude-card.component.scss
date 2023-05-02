@@ -32,13 +32,13 @@
 
 .card-description{
     padding: 20px;
-    border: 0px 0px 0px 1px solid #262626;
+   
 }
 
 .card-description::before{
     content: "<h4>";
-    opacity: 0.3;
-    color: white;
+    opacity: 0.5;
+    color: var(--color5);
     display: block;
     margin-left: -18px;
     font-weight: normal;
@@ -48,7 +48,8 @@
 
 .card-description::after{
 
-    color: rgba(255, 255, 255, 0.267);
+    opacity: 0.5;
+    color: 1px solid #230c3340;
     display: block;
     margin-left: -18px;
     font-weight: normal;
@@ -58,6 +59,8 @@
 
 
 .description{
-    border-left: 1px solid rgba(255, 255, 255, 0.267);
+    opacity: 0.3;
+    border-left: 1px solid var(--color5);
     padding: 20px;
 }
+

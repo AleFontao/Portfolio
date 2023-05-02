@@ -9,11 +9,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { AptitudeCardComponent } from './aptitude-card/aptitude-card.component';
 import { CertificationCardComponent } from './certification-card/certification-card.component';
+
+import { ProjectCardComponent } from './project-card/project-card.component';
 @NgModule({
-  declarations: [	
+  declarations: [			
     AppComponent,
     AptitudeCardComponent,
-      CertificationCardComponent
+      CertificationCardComponent,
+
+      ProjectCardComponent
    ],
   imports: [
     BrowserModule,
