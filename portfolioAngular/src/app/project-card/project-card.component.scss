@@ -9,6 +9,7 @@ img{
 .project-img{
 
     border-radius: 15px;
+    max-width: 663px;
 }
 
 .container-project{
@@ -20,6 +21,7 @@ img{
     overflow: hidden;
     justify-content: space-around;
     align-items: center;
+    padding: 0px 10px;
 }
 
 .project-body{
@@ -61,4 +63,10 @@ img{
     opacity: 1;
     border-left: 1px solid #230c3347;
     padding: 20px;
+}
+
+@media(max-width: 1000px) {
+   .container-project{
+    flex-direction: column !important;
+   }
 }

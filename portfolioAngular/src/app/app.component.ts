@@ -18,16 +18,20 @@ export class AppComponent implements OnInit {
 
   @ViewChild('masterHead') masterHead!: ElementRef;
   @ViewChild('head') head!: ElementRef;
+  
   ngOnInit() {
     this.onResize();
     window.addEventListener('scroll', this.scroll, true);
     this.typingCallback(this);
-
+    this.typingCallbackDot(this);
+    setInterval(() => this.typingCallbackDot(this), 2000);
   }
 
   public typewriter_text: string =
-    "Alejo Fontao";
+    "Alejo Fontao"; 
+  public typewriter_text_dot: string = "|";
   public typewriter_display: string = "";
+  public typewriter_display_dot: string = "";
 
   typingCallback(that: any) {
     let total_length = that.typewriter_text.length;
@@ -35,9 +39,21 @@ export class AppComponent implements OnInit {
     if (current_length < total_length) {
       that.typewriter_display += that.typewriter_text[current_length];
       setTimeout(that.typingCallback, 80, that);
+    }else{
+      
     }
   }
 
+  typingCallbackDot(that: any) {
+    let total_length = that.typewriter_text_dot.length;
+    let current_length = that.typewriter_display_dot.length;
+    if (current_length < total_length) {
+      that.typewriter_display_dot += that.typewriter_text_dot[current_length];
+      setTimeout(that.typingCallbackDot, 1000, that);
+    }else{
+      that.typewriter_display_dot = "";
+    }
+  }
 
 
   scroll = (): void => {

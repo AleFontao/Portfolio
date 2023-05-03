@@ -200,7 +200,7 @@
         opacity: 0.4;
     }
 
-  
+
 
     .shape-cover-img {
         position: absolute;
@@ -222,7 +222,7 @@
         z-index: 0;
     }
 
-    .text-img {    
+    .text-img {
         opacity: 1;
         position: absolute;
         top: 162px !important;
@@ -232,7 +232,34 @@
         font-size: 15px !important;
         transition: .5s;
     }
+
+
+    .linkedin {
+        top: 150px !important;
+        left: 260px !important;
+        width: 102px !important;
+    }
+
+    .instagram {
+
+        left: 200px !important;
+        width: 102px !important;
+    }
+
 }
+
+@media(max-width: 500px) {
+
+    h1>p {
+        opacity: 0.6 !important;
+        font-size: 4.8vw !important;
+        top: 0.3vh !important;
+        right: 18vw !important;
+    }
+
+}
+
+
 
 .shape {
     position: absolute;
@@ -250,6 +277,32 @@
     width: 300px;
     left: 23px;
     z-index: 0;
+}
+
+.shape-cover-social {
+    position: absolute;
+    width: 90px;
+    z-index: 0;
+}
+
+.gitHub {
+    top: 50px;
+    left: 260px;
+    cursor: pointer;
+}
+
+.linkedin {
+    top: 130px;
+    left: 340px;
+    width: 102px !important;
+    cursor: pointer;
+}
+
+.instagram {
+    top: 250px;
+    left: 320px;
+    width: 102px !important;
+    cursor: pointer;
 }
 
 
@@ -277,7 +330,7 @@ img {
 
 #proyectos {
     height: auto;
-    min-height: 1200px;
+    min-height: 2000px;
     width: 100%;
     background-color: var(--color2);
     display: flex;
@@ -285,4 +338,15 @@ img {
     justify-content: center;
     align-items: center;
     gap: 100px;
+
+
+}
+
+h1>p {
+    opacity: 0.4;
+    font-weight: 1;
+    font-size: 4.8vw;
+    position: absolute;
+    top: 0.9vh;
+    right: 16vw;
 }

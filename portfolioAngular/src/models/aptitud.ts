@@ -5,7 +5,7 @@ export interface Aptitud{
 }
 
 export const Aptitudes: Aptitud[] = [
-    {icon:"device_hub",  title:"Lenguajes de programación", description:"Experiencia y estudio en: Java, JavaScript y C#"},
+    {icon:"device_hub",  title:"Lenguajes de programación", description:"Experiencia y estudio en: Java, JavaScript, C# y Python"},
     {icon:"memory",  title:"FrameWorks", description:"Proyectos realizados en: Angular y ASP.NET Core"},
 
 
